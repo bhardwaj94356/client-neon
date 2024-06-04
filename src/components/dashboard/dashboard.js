@@ -6,6 +6,7 @@ import Cool_Blue_Neon from '../../images/neon_cool_blue.jpg';
 import Purple_Neon from '../../images/neon_purple.jpg';
 import Red_Neon from '../../images/neon_red.jpg';
 import Yellow_Neon from '../../images/neon_yellow.jpg';
+import Footer from '../footer/Footer';
 
 const Dashboard = () => {
     return(
@@ -71,6 +72,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 };
