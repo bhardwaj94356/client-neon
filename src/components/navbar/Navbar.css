@@ -62,7 +62,7 @@ li {
 .colLink:hover {
     color: white;
     transition: all ease-in 0.3s;
-    /* text-shadow: 2px 2px white; */
+    text-shadow: 3px 3px gray;
     filter: blur(0px);
 }
 
