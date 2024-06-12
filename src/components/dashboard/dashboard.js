@@ -11,7 +11,7 @@ import Footer from '../footer/Footer';
 const Dashboard = () => {
     return(
         <div className='dashboardStyle'>
-            <h1 style={{marginTop: 150}}>Khelpe's Neon</h1>
+            <h1 style={{marginTop: 120}}>Khelpe's Neon</h1>
             <div className='neonImg'>
                 <div className='mostSell'>
                     <h2>Most Selling Products</h2>

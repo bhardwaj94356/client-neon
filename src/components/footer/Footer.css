@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #1B1A55;
     color: white;
     width: 100%;
     justify-content: center;
@@ -11,4 +11,21 @@
 .insideFooter {
     display: flex;
     flex-direction: row;
+}
+
+.insideFooterLeft {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.insideFooterRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.devs {
+    text-align: center;
 }
