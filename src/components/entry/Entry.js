@@ -1,6 +1,6 @@
 import React from "react";
-import LogoVideo from '../../images/AssamNeon - Video.mp4';
-import './entry.css'
+import LogoVideo from '../../images/NEON.mp4';
+import './entry.css';
 
 const Entry = () => {
     return(

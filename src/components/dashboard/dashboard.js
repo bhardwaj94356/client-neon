@@ -6,12 +6,20 @@ import Cool_Blue_Neon from '../../images/neon_cool_blue.jpg';
 import Purple_Neon from '../../images/neon_purple.jpg';
 import Red_Neon from '../../images/neon_red.jpg';
 import Yellow_Neon from '../../images/neon_yellow.jpg';
+import CustomizeIcon from '../../images/cuztomize.png';
 import Footer from '../footer/Footer';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     return(
         <div className='dashboardStyle'>
-            <h1 style={{marginTop: 120}}>Khelpe's Neon</h1>
+            <p style={{marginTop: 120, textAlign: 'center'}}><b style={{fontSize: 30}}>NEON ASSAM</b><br/>Light Up Your Imagination</p>
+            <div className='customSection'>
+                <Link to='/customize' className='customNeon'>
+                    <img src={CustomizeIcon} alt="Customize Section" width={150} />
+                    <p>Customize Neon</p>
+                </Link>
+            </div>
             <div className='neonImg'>
                 <div className='mostSell'>
                     <h2>Most Selling Products</h2>

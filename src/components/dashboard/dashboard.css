@@ -10,6 +10,23 @@
     font-weight:500;
 }
 
+.customSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.customNeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 .neonImg {
     display: flex;
     flex-direction: row;

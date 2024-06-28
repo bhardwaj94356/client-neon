@@ -1,29 +1,49 @@
-import Dashboard from '../src/components/dashboard/dashboard';
-import Navbar from '../src/components/navbar/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Entry from '../src/components/entry/Entry';
-import React, {useState, useEffect} from 'react';
+import Dashboard from '../src/components/dashboard/dashboard'
+import Navbar from '../src/components/navbar/Navbar'
+import { Routes, Route } from 'react-router-dom'
+import Entry from '../src/components/entry/Entry'
+import React, { useState, useEffect, useRef } from 'react'
+import Customize from './components/customize/Customize'
 
 function App() {
-  const [showElement, setShowElement] = useState(true);
+  const [showElement, setShowElement] = useState(false);
+  const ifRenderedBefore = useRef(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowElement(false);
-    }, 2000);
+    const hasBeenShown = localStorage.getItem('entryShown') === 'true';
+
+    if (!hasBeenShown) {
+      setShowElement(true);
+      const timer = setTimeout(() => {
+        localStorage.setItem('entryShown', 'true');
+        setShowElement(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  useEffect(() => {
+    if(!ifRenderedBefore.current){
+      const handleWindowClose = () => {
+        localStorage.setItem('entryShown', 'false');
+      };
+      window.addEventListener('beforeunload', handleWindowClose);
+  
+      return () => {
+        window.removeEventListener('beforeunload', handleWindowClose);
+      };
+    }
   }, []);
 
   return (
     <div className="App">
       {showElement && <Entry />}
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' />
-          <Route path='/Neon Sign' element={'This is where the routing page will be called'}/>
-        </Routes>
-      </Router>
-      <Dashboard />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/customize' element={<Customize />} />
+      </Routes>
     </div>
   );
 }

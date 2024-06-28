@@ -1,0 +1,53 @@
+.customContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    height: 500px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.styling {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.fontStyles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fonts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 35svw;
+    gap: 10px;
+}
+
+.chooseFont {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 150px;
+    border: solid 1px black;
+    align-items: center;
+    justify-content: center;
+}
