@@ -65,6 +65,9 @@ const Customize = () => {
             <div className='chooseFont'>
               <p>Test Font</p>
             </div>
+            <div className='chooseFont'>
+              <p>Test Font</p>
+            </div>
            </div>
            <hr style={{width:'40svw', height:3, backgroundColor:'black', marginTop:30}}/>
            <h3>Select Your Colour</h3>
