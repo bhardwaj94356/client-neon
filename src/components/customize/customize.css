@@ -24,6 +24,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .fontStyles {
@@ -50,4 +52,28 @@
     border: solid 1px black;
     align-items: center;
     justify-content: center;
+}
+
+.color {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.colorCode {
+    border: solid 1px black;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+}
+
+button {
+    margin-top: 50px;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #1B1A55;
+    color: white;
 }

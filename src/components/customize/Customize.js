@@ -68,6 +68,18 @@ const Customize = () => {
            </div>
            <hr style={{width:'40svw', height:3, backgroundColor:'black', marginTop:30}}/>
            <h3>Select Your Colour</h3>
+           <div className='color'>
+              <div className='colorCode' style={{backgroundColor:'red'}}></div>
+              <div className='colorCode' style={{backgroundColor:'white'}}></div>
+              <div className='colorCode' style={{backgroundColor:'green'}}></div>
+              <div className='colorCode' style={{backgroundColor:'blue'}}></div>
+              <div className='colorCode' style={{backgroundColor:'yellow'}}></div>
+              <div className='colorCode' style={{backgroundColor:'pink'}}></div>
+              <div className='colorCode' style={{backgroundColor:'cyan'}}></div>
+              <div className='colorCode' style={{backgroundColor:'orange'}}></div>
+              <div className='colorCode' style={{backgroundColor:'purple'}}></div>
+            </div>
+            <button>Place Your Order</button>
         </div>
       </div>
     </div>
