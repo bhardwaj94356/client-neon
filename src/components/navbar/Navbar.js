@@ -15,9 +15,6 @@ const Navbar = () => {
                 </Link>
                 <div className="listItems">
                     <li>
-                        <Link className="colLink" to='/' style={{textDecoration: 'none'}}>Home</Link>
-                    </li>
-                    <li>
                         <Link className="colLink" to='/' style={{textDecoration: 'none'}}>Neon Sign</Link>
                     </li>
                     <li>
