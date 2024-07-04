@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='devs'>
-                <p>Developed by: Bhardwaj Thengal & Kanak Sonowal<br/>Copyright © 64bit</p>
+                <p>Designed & Developed by: Bhardwaj Thengal & Kanak Sonowal<br/>Copyright © 64bit</p>
             </div>
         </div>
     )
