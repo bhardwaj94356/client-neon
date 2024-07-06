@@ -19,14 +19,13 @@ const Customize = () => {
     setColour(color);
   };
 
-  //function to change the text colour
   //function to add all the changes as text to the database
 
   return (
     <div className='customContent'>
       <div className='styling'>
         <div className='preview'>
-          <p style={{ fontFamily: fontStyle }}>{text}</p>
+          <p style={{ fontFamily: fontStyle, color: colour}}>{text}</p>
         </div>
         <div className='fontStyles'>
           <h1>Customize</h1>
@@ -46,15 +45,15 @@ const Customize = () => {
            <hr style={{width:'40svw', height:3, backgroundColor:'black', marginTop:30}}/>
            <h3>Select Your Colour</h3>
            <div className='color'>
-              <div className='colorCode' style={{backgroundColor:'red'}} onClick={() => changeColour()}></div>
-              <div className='colorCode' style={{backgroundColor:'white'}}></div>
-              <div className='colorCode' style={{backgroundColor:'green'}}></div>
-              <div className='colorCode' style={{backgroundColor:'blue'}}></div>
-              <div className='colorCode' style={{backgroundColor:'yellow'}}></div>
-              <div className='colorCode' style={{backgroundColor:'pink'}}></div>
-              <div className='colorCode' style={{backgroundColor:'cyan'}}></div>
-              <div className='colorCode' style={{backgroundColor:'orange'}}></div>
-              <div className='colorCode' style={{backgroundColor:'purple'}}></div>
+              <button className='colorCode' style={{backgroundColor:'red'}} onClick={() => changeColour('red')}></button>
+              <button className='colorCode' style={{backgroundColor:'white'}} onClick={() => changeColour('white')}></button>
+              <button className='colorCode' style={{backgroundColor:'green'}} onClick={() => changeColour('green')}></button>
+              <button className='colorCode' style={{backgroundColor:'blue'}} onClick={() => changeColour('blue')}></button>
+              <button className='colorCode' style={{backgroundColor:'yellow'}} onClick={() => changeColour('yellow')}></button>
+              <button className='colorCode' style={{backgroundColor:'pink'}} onClick={() => changeColour('pink')}></button>
+              <button className='colorCode' style={{backgroundColor:'cyan'}} onClick={() => changeColour('cyan')}></button>
+              <button className='colorCode' style={{backgroundColor:'orange'}} onClick={() => changeColour('orange')}></button>
+              <button className='colorCode' style={{backgroundColor:'purple'}} onClick={() => changeColour('#B03AF0')}></button>
             </div>
             <button>Place Your Order</button>
         </div>
