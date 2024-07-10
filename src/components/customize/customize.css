@@ -89,3 +89,98 @@ button {
     background-color: #1B1A55;
     color: white;
 }
+
+@font-face {
+    font-family: Big Spender;
+    src: url("../../fonts/v1.0/BigSpender-v1.otf");
+}
+
+@font-face {
+    font-family: Cactron;
+    src: url("../../fonts/Cactron/Cactron-Regular.otf");
+}
+
+@font-face {
+    font-family: Camilla;
+    src: url("../../fonts/Camilla-Calligraph/Camilla-Calligraph.otf");
+}
+
+@font-face {
+    font-family: Havana;
+    src: url("../../fonts/havana/Havana-Regular.otf");
+}
+
+@font-face {
+    font-family: Mallino;
+    src: url("../../fonts/mallino/Mallino.ttf");
+}
+
+@font-face {
+    font-family: Misterly;
+    src: url("../../fonts/Misterly/Misterly.ttf");
+}
+
+@font-face {
+    font-family: Neon-Christmas;
+    src: url("../../fonts/neon-christmas/Neon-Christmas.otf");
+}
+
+@font-face {
+    font-family: Neonderthaw;
+    src: url("../../fonts/neonderthaw/Neonderthaw-Regular.ttf");
+}
+
+@font-face {
+    font-family: Neoneon;
+    src: url("../../fonts/neoneon/Neoneon.otf");
+}
+
+@font-face {
+    font-family: neonsign;
+    src: url("../../fonts/neonsign/Neonsign-Regular.otf");
+}
+
+@font-face {
+    font-family: nostrade;
+    src: url("../../fonts/nostrade/nostrade.otf");
+}
+
+@font-face {
+    font-family: onoma;
+    src: url("../../fonts/onoma/onoma.otf");
+}
+
+@font-face {
+    font-family: Playwrite_AU;
+    src: url("../../fonts/Playwrite_AU/PlaywriteAUNSW-Regular.ttf");
+}
+
+@font-face {
+    font-family: Playwrite_GB_S;
+    src: url("../../fonts/Playwrite_GB_S/Camilla-Calligraph-BF6627b54ec6162.otf");
+}
+
+@font-face {
+    font-family: send_flowers;
+    src: url("../../fonts/send_flowers/SendFlowers-Regular.otf");
+}
+
+@font-face {
+    font-family: srfm_neon;
+    src: url("../../fonts/srfm_neon/srfm-neon.ttf");
+}
+
+@font-face {
+    font-family: sunday-script-typeface;
+    src: url("../../fonts/sunday-script-typeface/Sunday-BF6628f53c28cde.otf");
+}
+
+@font-face {
+    font-family: testimonia;
+    src: url("../../fonts/testimonia/Testimonia.otf");
+}
+
+@font-face {
+    font-family: vintage-neon;
+    src: url("../../fonts/vintage-neon/Vintage-Neon-BF65f99efd90542.otf");
+}
