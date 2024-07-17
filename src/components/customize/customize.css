@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-top: 100px;
 }
 
 .preview {
@@ -114,11 +115,6 @@ button {
     src: url("../../fonts/havana/Havana-Regular.otf");
 }
 
-/* @font-face {
-    font-family: Mallino;
-    src: url("../../fonts/mallino/Mallino.ttf");
-} */
-
 @font-face {
     font-family: Misterly;
     src: url("../../fonts/Misterly/Misterly.ttf");
@@ -197,6 +193,11 @@ button {
     .fonts{
         width: 100svw;
     }
+
+    .preview-text{
+        font-size: 25px;
+        margin: -220px 0 0 0;
+    }
   }
 
   @media screen and (max-width: 425px) {
@@ -209,8 +210,4 @@ button {
         width: 300px;
         height: 300px;
     }
-
-    /* .fonts{
-        width: 100svw;
-    } */
   }
