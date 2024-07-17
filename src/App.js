@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Entry from '../src/components/entry/Entry'
 import React, { useState, useEffect, useRef } from 'react'
 import Customize from './components/customize/Customize'
+import CustomerDetails from './components/customerDetails/CustomerDetails'
 
 function App() {
   const [showElement, setShowElement] = useState(false);
@@ -43,6 +44,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Dashboard />} />
         <Route path='/customize' element={<Customize />} />
+        <Route path='/customerDetails' element={<CustomerDetails />} />
       </Routes>
     </div>
   );

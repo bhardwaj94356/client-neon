@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
-import './customize.css';
+import React, { useState } from 'react'
+import './customize.css'
 import SofaOrange from '../../images/sofa_wall_orange.jpg'
 import SofaBlue from '../../images/sofa_wall_blue.jpg'
 import SofaWhite from '../../images/sofa_wall_white.jpg'
+import Store from '../../images/storefront.jpeg'
+import { useNavigate } from 'react-router-dom'
 
 const Customize = () => {
 
-  const [text, setText] = useState('');
-  const [fontStyle, setFontStyle] = useState('');
-  const [colour, setColour] = useState('');
+  const [text, setText] = useState('')
+  const [fontStyle, setFontStyle] = useState('')
+  const [colour, setColour] = useState('')
+  const [image, setImage] = useState(Store)
+  const navigate = useNavigate()
 
   const changeText = (e) => {
     setText(e.target.value);
@@ -22,6 +26,14 @@ const Customize = () => {
     setColour(color);
   };
 
+  const changeImage = (photo) => {
+    setImage(photo)
+  }
+
+  const handleSubmit = () => {
+    navigate('/customerDetails', { state: {text, fontStyle, colour} })
+  }
+
   //function to add all the changes as text to the database
 
   return (
@@ -29,12 +41,13 @@ const Customize = () => {
       <div className='styling'>
         <div>
           <div className='preview'>
-            <p style={{ fontFamily: fontStyle, color: colour}}>{text}</p>
+            <img src={image} alt="Choose an image from below" width={500} height={500} style={{borderRadius:5, fontSize:20, textAlign:'center'}} className='resize' />
+            <p style={{ fontFamily: fontStyle, color: colour}} className='preview-text'>{text}</p>
           </div>
           <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: 20}}>
-            <img src={SofaOrange} alt='Sofa, orange background' width={80} style={{marginTop: 10, borderRadius: 5}}/>
-            <img src={SofaBlue} alt='Sofa, orange background' width={80} style={{marginTop: 10, borderRadius: 5}}/>
-            <img src={SofaWhite} alt='Sofa, orange background' width={80} style={{marginTop: 10, borderRadius: 5}}/>
+            <img src={SofaOrange} onClick={() => changeImage(SofaOrange)} alt='Sofa, orange background' width={80} style={{marginTop: 10, borderRadius: 5}}/>
+            <img src={SofaBlue} onClick={() => changeImage(SofaBlue)} alt='Sofa, Blue background' width={80} style={{marginTop: 10, borderRadius: 5}}/>
+            <img src={SofaWhite} onClick={() => changeImage(SofaWhite)} alt='Sofa, White background' width={80} style={{marginTop: 10, borderRadius: 5}}/>
           </div>
         </div>
         <div className='fontStyles'>
@@ -46,9 +59,9 @@ const Customize = () => {
             <button className='chooseFont' onClick={() => changeFontStyle('Big Spender')} style={{fontFamily:'Big Spender'}}>Big Spender</button>
             <button className='chooseFont' onClick={() => changeFontStyle('Cactron')} style={{fontFamily:'Cactron'}}>Cactron</button>
             <button className='chooseFont' onClick={() => changeFontStyle('Camilla')} style={{fontFamily:'Camilla'}}>Camilla</button>
-            <button className='chooseFont' onClick={() => changeFontStyle('Playwrite CO, cursive')} style={{fontFamily:'Playwrite CO, cursive'}}>Cursive</button>
+            {/* <button className='chooseFont' onClick={() => changeFontStyle('Playwrite CO, cursive')} style={{fontFamily:'Playwrite CO, cursive'}}>Cursive</button> */}
             <button className='chooseFont' onClick={() => changeFontStyle('Havana')} style={{fontFamily:'Havana'}}>Havana</button>
-            <button className='chooseFont' onClick={() => changeFontStyle('Mallino')} style={{fontFamily:'Mallino'}}>Havana</button>
+            {/* <button className='chooseFont' onClick={() => changeFontStyle('Mallino')} style={{fontFamily:'Mallino'}}>Mallino</button> */}
             <button className='chooseFont' onClick={() => changeFontStyle('Misterly')} style={{fontFamily:'Misterly'}}>Misterly</button>
             <button className='chooseFont' onClick={() => changeFontStyle('Neon-Christmas')} style={{fontFamily:'Neon-Christmas'}}>Neon-Christmas</button>
             <button className='chooseFont' onClick={() => changeFontStyle('Neonderthaw')} style={{fontFamily:'Neonderthaw'}}>Neonderthaw</button>
@@ -77,7 +90,7 @@ const Customize = () => {
             <button className='colorCode' style={{backgroundColor:'orange'}} onClick={() => changeColour('orange')}></button>
             <button className='colorCode' style={{backgroundColor:'purple'}} onClick={() => changeColour('#B03AF0')}></button>
            </div>
-          <button>Place Your Order</button>
+          <button id='submit' onClick={handleSubmit}>Place Your Order</button>
         </div>
       </div>
     </div>

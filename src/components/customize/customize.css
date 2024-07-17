@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
-
 .customContent {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-top: none;
     justify-content: center;
     align-items: center;
-    height: 100svh;
+    height: 100%;
 }
 
 .preview {
@@ -17,13 +14,20 @@
     justify-content: center;
     border: solid 1px black;
     height: 500px;
-    width: 450px;
+    width: 500px;
     border-radius: 10px;
     color: white;
     font-size: 50px;
     background-image: url('../../images/black-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.preview-text {
+    position: absolute;
+    margin-top: -300px;
+    width: 450px;
+    text-align: center;
 }
 
 .styling {
@@ -110,10 +114,10 @@ button {
     src: url("../../fonts/havana/Havana-Regular.otf");
 }
 
-@font-face {
+/* @font-face {
     font-family: Mallino;
     src: url("../../fonts/mallino/Mallino.ttf");
-}
+} */
 
 @font-face {
     font-family: Misterly;
@@ -184,3 +188,29 @@ button {
     font-family: vintage-neon;
     src: url("../../fonts/vintage-neon/Vintage-Neon-BF65f99efd90542.otf");
 }
+
+@media only screen and (max-width: 1440px) {
+    .styling {
+        margin-top: 100px;
+    }
+
+    .fonts{
+        width: 100svw;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .preview{
+        width: 300px;
+        height: 300px;
+    }
+
+    .resize{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* .fonts{
+        width: 100svw;
+    } */
+  }
