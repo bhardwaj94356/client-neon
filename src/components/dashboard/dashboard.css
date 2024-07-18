@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 .dashboardStyle {
     display: flex;
@@ -73,3 +73,22 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media screen and (max-width:768px) {
+    .mostSell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mostSell h2 {
+        margin: 100px 0 0 0;
+    }
+
+    .mostSell img {
+        width: 300px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');

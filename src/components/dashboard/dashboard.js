@@ -22,10 +22,10 @@ const Dashboard = () => {
             </div>
             <div className='neonImg'>
                 <div className='mostSell'>
-                    <h2>Most Selling Products</h2>
+                    <h2>Available Products</h2>
                     <div className='mostSellingItems'>
                         <div className='neonDetails'>
-                            <img src={White_Neon} alt='White Neon' />
+                            <img src={White_Neon} alt='White Neon' className='imgSize' />
                             <p>White Neon<br/>100m<br/>Rs. 1000</p>
                         </div>
                         <div className='neonDetails'>

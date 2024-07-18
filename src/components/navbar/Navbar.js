@@ -22,7 +22,7 @@ const Navbar = () => {
                     <img className="image" src={Logo} alt="Logo Design" style={{width: 150, borderRadius: 10, marginLeft:20}}/>
                 </Link>
                 <div className="menu-icon" onClick={toggleMenu}>
-                    {isOpen ? <FaTimes /> : <FaBars />}
+                    {isOpen ? <FaTimes style={{marginRight:20}} /> : <FaBars style={{marginRight:'20'}} />}
                 </div>
                 {/* <div className="listItems"> */}
                 <ul className={isOpen ? "listItems active" : "listItems"}>
