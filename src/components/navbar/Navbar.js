@@ -27,16 +27,10 @@ const Navbar = () => {
                 {/* <div className="listItems"> */}
                 <ul className={isOpen ? "listItems active" : "listItems"}>
                     <li>
-                        <Link className="colLink" to='/' style={{textDecoration: 'none'}}>Neon Sign</Link>
+                        <Link className="colLink" to='/' style={{textDecoration: 'none'}}>Home</Link>
                     </li>
                     <li>
-                        <Link className="colLink" to='/' style={{textDecoration: 'none'}}>Pop Arts</Link>
-                    </li>
-                    <li>
-                        <Link className="colLink" to='/' style={{textDecoration: 'none'}}>Wall Clock</Link>
-                    </li>
-                    <li>
-                        <Link className="colLink" to='/' style={{textDecoration: 'none'}}>Photo Frames</Link>
+                        <Link className="colLink" to='/customize' style={{textDecoration: 'none'}}>Customize</Link>
                     </li>
                     <li>
                         <Link className="colLink" to='/' style={{textDecoration: 'none'}}>About Us</Link>
