@@ -93,6 +93,13 @@ button {
     cursor: pointer;
     background-color: #1B1A55;
     color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    color: black;
+    background-color: #39ff14;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
 @font-face {
