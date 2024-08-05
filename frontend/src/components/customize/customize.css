@@ -1,0 +1,220 @@
+.customContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+    background-image: url('../../images/black-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preview-text {
+    position: absolute;
+    margin-top: -300px;
+    width: 450px;
+    text-align: center;
+}
+
+.styling {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontStyles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fonts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 35svw;
+    gap: 10px;
+}
+
+.chooseFont {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 150px;
+    border: solid 1px black;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: black;
+}
+
+.color {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.colorCode {
+    border: solid 1px black;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;    
+}
+
+button {
+    margin-top: 50px;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #1B1A55;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    color: black;
+    background-color: #39ff14;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+@font-face {
+    font-family: Big Spender;
+    src: url("../../fonts/v1.0/BigSpender-v1.otf");
+}
+
+@font-face {
+    font-family: Cactron;
+    src: url("../../fonts/Cactron/Cactron-Regular.otf");
+}
+
+@font-face {
+    font-family: Camilla;
+    src: url("../../fonts/Camilla-Calligraph/Camilla-Calligraph.otf");
+}
+
+@font-face {
+    font-family: Havana;
+    src: url("../../fonts/havana/Havana-Regular.otf");
+}
+
+@font-face {
+    font-family: Misterly;
+    src: url("../../fonts/Misterly/Misterly.ttf");
+}
+
+@font-face {
+    font-family: Neon-Christmas;
+    src: url("../../fonts/neon-christmas/Neon-Christmas.otf");
+}
+
+@font-face {
+    font-family: Neonderthaw;
+    src: url("../../fonts/neonderthaw/Neonderthaw-Regular.ttf");
+}
+
+@font-face {
+    font-family: Neoneon;
+    src: url("../../fonts/neoneon/Neoneon.otf");
+}
+
+@font-face {
+    font-family: neonsign;
+    src: url("../../fonts/neonsign/Neonsign-Regular.otf");
+}
+
+@font-face {
+    font-family: nostrade;
+    src: url("../../fonts/nostrade/nostrade.otf");
+}
+
+@font-face {
+    font-family: onoma;
+    src: url("../../fonts/onoma/onoma.otf");
+}
+
+@font-face {
+    font-family: Playwrite_AU;
+    src: url("../../fonts/Playwrite_AU/PlaywriteAUNSW-Regular.ttf");
+}
+
+@font-face {
+    font-family: Playwrite_GB_S;
+    src: url("../../fonts/Playwrite_GB_S/Camilla-Calligraph-BF6627b54ec6162.otf");
+}
+
+@font-face {
+    font-family: send_flowers;
+    src: url("../../fonts/send_flowers/SendFlowers-Regular.otf");
+}
+
+@font-face {
+    font-family: srfm_neon;
+    src: url("../../fonts/srfm_neon/srfm-neon.ttf");
+}
+
+@font-face {
+    font-family: sunday-script-typeface;
+    src: url("../../fonts/sunday-script-typeface/Sunday-BF6628f53c28cde.otf");
+}
+
+@font-face {
+    font-family: testimonia;
+    src: url("../../fonts/testimonia/Testimonia.otf");
+}
+
+@font-face {
+    font-family: vintage-neon;
+    src: url("../../fonts/vintage-neon/Vintage-Neon-BF65f99efd90542.otf");
+}
+
+@media only screen and (max-width: 1440px) {
+    .styling {
+        margin-top: 100px;
+    }
+
+    .fonts{
+        width: 100svw;
+    }
+
+    .preview-text{
+        font-size: 25px;
+        margin: -220px 0 0 0;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .preview{
+        width: 300px;
+        height: 300px;
+    }
+
+    .resize{
+        width: 300px;
+        height: 300px;
+    }
+  }
